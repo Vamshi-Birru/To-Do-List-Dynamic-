@@ -7,10 +7,14 @@ I did this app to learn how to combine all the individual technologies I learnt 
 ## Screenshots
 
 ### Todos List View
-![Todos List View](./screenshots/create.PNG?raw=true "Todos List View")
+![Todos List View](https://github.com/VAMSHIBIRRU/To-Do-List-Dynamic-/blob/main/screenshots/create.png)
 
 ### Create Todo
-![Create Todo](./screenshots/update.PNG?raw=true "Create Todo")
+![Create Todo](https://github.com/VAMSHIBIRRU/To-Do-List-Dynamic-/blob/main/screenshots/update.png)
 
 ### Edit Todo
-![Edit Todo](./screenshots/delete.PNG?raw=true "Edit Todo")
+![Edit Todo](https://github.com/VAMSHIBIRRU/To-Do-List-Dynamic-/blob/main/screenshots/delete.png)
+
+### To run in your system, please
+
+run npm i before ng serve.
