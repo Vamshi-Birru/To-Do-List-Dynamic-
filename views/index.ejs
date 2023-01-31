@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"intergrity="sha512-KfkfwYDsLKIlwQp6LFnl8zNdLGxu9YAA1QvwINKs4PhclQSvqcyVLLD9aMhXd13uQjoXtEKNos0WaZqXgel0=="crossorigin="anonymous"referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do-List</h1>
+        </header>
+        <form action="/add/todo" method="POST">
+            <input type="text" name="todo" class="form-control" placeholder="Enter Todo">
+            <input type="submit" value="Submit" class="todo-button">
+            
+        </form>
+        <div class="todo-container">
+            <ul class="todo-list">
+                <% todo.forEach(todos=>{%>
+                    <div class="list">
+                        <li class="todo-l"><%= todos.todo%></li>
+                  <a onclick="del()" href="/delete/todo/<%=todos.id%>/<%=todos.todo%>"   class="delete">Delete</a>
+                    </div>
+                  
+                
+                <%})%>
+                </ul>
+        </div>
+    </div>
+    <script>
+        function del(){
+            alert("You are going to delete, one of your elements from the list!!")
+        }
+    </script>
+</body>
+</html>
